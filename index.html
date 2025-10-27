@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto de Educación Superior Tecnológico Público Huaycán</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="../img/logo.png" alt="Logo del Instituto">
+        Instituto Huaycán
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Carreras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contáctenos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- INICIO -->
+  <section id="inicio" class="container text-center my-5">
+    <h1 class="text-primary">Instituto de Educación Superior Tecnológico Público Huaycán</h1>
+    <p>Formando profesionales técnicos con excelencia y compromiso.</p>
+
+    <!-- VIDEO -->
+    <div class="ratio ratio-16x9 mt-4">
+      <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" title="Video Institucional" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="text-primary mb-4">Nosotros</h2>
+      <p>El Instituto de Educación Superior Tecnológico Público Huaycán se dedica a la formación de profesionales técnicos de alta calidad, capaces de responder a las necesidades del mercado laboral con ética, conocimiento y compromiso social.</p>
+    </div>
+  </section>
+
+  <!-- CARRERAS -->
+  <section id="servicios" class="container py-5">
+    <h2 class="text-center text-primary mb-4">Nuestras Carreras Profesionales</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="../img/auto.jpg" class="card-img-top" alt="Mecánica Automotriz">
+          <div class="card-body">
+            <h5 class="card-title">Mecánica Automotriz</h5>
+            <p class="card-text">Domina la tecnología automotriz moderna y prepárate para los desafíos de la industria.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="../img/enfermeria.png" class="card-img-top" alt="Enfermería Técnica">
+          <div class="card-body">
+            <h5 class="card-title">Enfermería Técnica</h5>
+            <p class="card-text">Aprende a cuidar, asistir y salvar vidas con una formación humana y científica.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="../img/electronica.jpg" class="card-img-top" alt="Electrónica Industrial">
+          <div class="card-body">
+            <h5 class="card-title">Electrónica Industrial</h5>
+            <p class="card-text">Diseña, instala y mantiene sistemas electrónicos que mueven el mundo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="../img/conmputa.jpg" class="card-img-top" alt="Computación e Informática">
+          <div class="card-body">
+            <h5 class="card-title">Computación e Informática</h5>
+            <p class="card-text">Conviértete en experto en tecnología, redes y desarrollo de software.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center text-primary mb-4">Contáctenos</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps?q=Huaycán,+Ate,+Lima,+Perú&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Todos los derechos reservados a Vasquez Ricapa Johan</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
