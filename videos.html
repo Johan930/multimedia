@@ -8,8 +8,8 @@
 
   <style>
     body {
-      background-color: #0f0f0f;
-      color: #f1f1f1;
+      background-color: #f8f9fa; /* Fondo claro */
+      color: #333;
       font-family: 'Segoe UI', sans-serif;
       scroll-behavior: smooth;
     }
@@ -22,17 +22,17 @@
     .hero {
       text-align: center;
       padding: 60px 20px;
-      background: linear-gradient(135deg, #004aad, #007bff);
+      background: linear-gradient(135deg, #007bff, #004aad);
       color: white;
-      border-bottom-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       animation: fadeDown 1.2s ease;
     }
 
     .video-section {
       max-width: 1200px;
-      margin: 50px auto;
+      margin: 60px auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       gap: 30px;
@@ -40,48 +40,49 @@
     }
 
     .video-card {
-      background: #1c1c1c;
+      background: white;
       border-radius: 15px;
       overflow: hidden;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .video-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 
     .video-card iframe {
       width: 100%;
       height: 300px;
       border: none;
-      border-bottom: 2px solid #007bff;
     }
 
     .video-info {
-      padding: 15px 20px;
+      padding: 20px;
     }
 
     .video-info h5 {
-      color: #00b4ff;
+      color: #007bff;
       font-weight: 600;
       margin-bottom: 8px;
     }
 
     .video-info p {
-      color: #ccc;
+      color: #555;
       font-size: 0.95rem;
       margin-bottom: 0;
     }
 
     footer {
-      background: #111;
-      color: #bbb;
+      background: linear-gradient(90deg, #004aad, #007bff);
+      color: white;
       text-align: center;
       padding: 20px 0;
       margin-top: 50px;
-      border-top: 2px solid #007bff;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
     }
 
     @keyframes fadeDown {
@@ -114,7 +115,7 @@
   <!-- HERO -->
   <section class="hero">
     <h1 class="fw-bold">Videos Institucionales 2025</h1>
-    <p class="lead">Explora los proyectos, actividades y testimonios de nuestro Instituto.</p>
+    <p class="lead">Descubre nuestros proyectos, actividades y testimonios en video.</p>
   </section>
 
   <!-- VIDEOS -->
@@ -124,23 +125,23 @@
       <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
       <div class="video-info">
         <h5>Presentación Institucional</h5>
-        <p>Conoce nuestra historia, valores y compromiso con la educación técnica de calidad.</p>
+        <p>Conoce la misión, visión y valores del Instituto Huaycán, comprometido con la excelencia educativa.</p>
       </div>
     </div>
 
     <div class="video-card">
       <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
       <div class="video-info">
-        <h5>Proyectos Tecnológicos</h5>
-        <p>Innovaciones presentadas por los alumnos de Computación, Electrónica y Mecánica.</p>
+        <h5>Proyectos 2025</h5>
+        <p>Los estudiantes muestran sus logros y proyectos innovadores en tecnología y diseño web.</p>
       </div>
     </div>
 
     <div class="video-card">
       <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
       <div class="video-info">
-        <h5>Feria Huaycán 2025</h5>
-        <p>Revive los momentos más destacados de la feria tecnológica organizada por el instituto.</p>
+        <h5>Feria Tecnológica Huaycán</h5>
+        <p>Una mirada a los stands, exposiciones y demostraciones en la feria tecnológica anual.</p>
       </div>
     </div>
 
@@ -148,7 +149,7 @@
       <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
       <div class="video-info">
         <h5>Testimonios de Estudiantes</h5>
-        <p>Escucha las experiencias de quienes forman parte de nuestra comunidad educativa.</p>
+        <p>Conoce la experiencia de quienes crecen y se forman profesionalmente en nuestro instituto.</p>
       </div>
     </div>
 
@@ -162,3 +163,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
