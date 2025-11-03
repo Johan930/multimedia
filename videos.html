@@ -8,75 +8,84 @@
 
   <style>
     body {
-      background: linear-gradient(to right, #eef2f3, #dfe9f3);
+      background-color: #0f0f0f;
+      color: #f1f1f1;
       font-family: 'Segoe UI', sans-serif;
-      color: #333;
       scroll-behavior: smooth;
     }
 
     .navbar-brand img {
-      height: 50px;
+      height: 45px;
       margin-right: 10px;
     }
 
     .hero {
-      background: linear-gradient(135deg, #007bff 0%, #004aad 100%);
-      color: white;
       text-align: center;
-      padding: 70px 20px;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      animation: fadeDown 1.3s ease;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #004aad, #007bff);
+      color: white;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeDown 1.2s ease;
     }
 
-    .card {
-      border: none;
+    .video-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .video-card {
+      background: #1c1c1c;
       border-radius: 15px;
       overflow: hidden;
-      transition: transform 0.4s, box-shadow 0.4s;
-      background: white;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    .video-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     }
 
-    iframe {
-      border: none;
+    .video-card iframe {
       width: 100%;
-      height: 250px;
-      border-radius: 12px;
+      height: 300px;
+      border: none;
+      border-bottom: 2px solid #007bff;
     }
 
-    h2.section-title {
-      color: #004aad;
-      text-align: center;
-      margin-bottom: 40px;
-      font-weight: 700;
-      animation: fadeUp 1.2s ease;
+    .video-info {
+      padding: 15px 20px;
+    }
+
+    .video-info h5 {
+      color: #00b4ff;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .video-info p {
+      color: #ccc;
+      font-size: 0.95rem;
+      margin-bottom: 0;
     }
 
     footer {
-      background: linear-gradient(90deg, #004aad, #007bff);
-      color: white;
+      background: #111;
+      color: #bbb;
       text-align: center;
-      padding: 15px 0;
-      margin-top: 40px;
-      border-top-left-radius: 40px;
-      border-top-right-radius: 40px;
-      box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      padding: 20px 0;
+      margin-top: 50px;
+      border-top: 2px solid #007bff;
     }
 
     @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-30px); }
+      from { opacity: 0; transform: translateY(-40px); }
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
@@ -103,54 +112,46 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero">
-    <h1 class="fw-bold">Videos Institucionales</h1>
-    <p class="lead">Conoce más sobre nuestro instituto y los proyectos realizados por nuestros estudiantes.</p>
-  </header>
+  <section class="hero">
+    <h1 class="fw-bold">Videos Institucionales 2025</h1>
+    <p class="lead">Explora los proyectos, actividades y testimonios de nuestro Instituto.</p>
+  </section>
 
   <!-- VIDEOS -->
-  <section class="container py-5">
-    <h2 class="section-title">Presentaciones del Proyecto 2025</h2>
+  <section class="video-section">
 
-    <div class="row g-4">
-
-      <!-- Video 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card text-center p-3">
-          <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
-          <h5 class="mt-3 text-primary fw-semibold">Presentación General</h5>
-          <p class="small">Video institucional que muestra la visión, misión y compromiso del Instituto Huaycán.</p>
-        </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
+      <div class="video-info">
+        <h5>Presentación Institucional</h5>
+        <p>Conoce nuestra historia, valores y compromiso con la educación técnica de calidad.</p>
       </div>
-
-      <!-- Video 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card text-center p-3">
-          <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
-          <h5 class="mt-3 text-primary fw-semibold">Proyectos 2025</h5>
-          <p class="small">Los estudiantes presentan sus innovaciones tecnológicas en la Feria Huaycán.</p>
-        </div>
-      </div>
-
-      <!-- Video 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card text-center p-3">
-          <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
-          <h5 class="mt-3 text-primary fw-semibold">Nuestros Talleres</h5>
-          <p class="small">Conoce los espacios donde formamos profesionales en tecnología, salud y mecánica.</p>
-        </div>
-      </div>
-
-      <!-- Video 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card text-center p-3">
-          <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
-          <h5 class="mt-3 text-primary fw-semibold">Testimonios</h5>
-          <p class="small">Docentes y alumnos comparten su experiencia educativa en el Instituto Huaycán.</p>
-        </div>
-      </div>
-
     </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
+      <div class="video-info">
+        <h5>Proyectos Tecnológicos</h5>
+        <p>Innovaciones presentadas por los alumnos de Computación, Electrónica y Mecánica.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
+      <div class="video-info">
+        <h5>Feria Huaycán 2025</h5>
+        <p>Revive los momentos más destacados de la feria tecnológica organizada por el instituto.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/9tPD1Lg3gAs?si=OaB1tQxhuTFFlN-c" allowfullscreen></iframe>
+      <div class="video-info">
+        <h5>Testimonios de Estudiantes</h5>
+        <p>Escucha las experiencias de quienes forman parte de nuestra comunidad educativa.</p>
+      </div>
+    </div>
+
   </section>
 
   <!-- FOOTER -->
