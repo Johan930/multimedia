@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Instituto Huaycán</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: #f9fbfd; }
+    .navbar-brand img { height: 45px; margin-right: 10px; }
+    .gallery-img {
+      height: 220px; object-fit: cover; border-radius: 10px; transition: transform 0.4s ease;
+    }
+    .gallery-img:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="../img/logo.png" alt="Logo"> Instituto Huaycán</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container py-5 text-center">
+    <h2 class="text-primary mb-5">Galería del Proyecto Institucional</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><img src="../img/auto.jpg" class="gallery-img w-100"></div>
+      <div class="col-md-4"><img src="../img/enfermeria.png" class="gallery-img w-100"></div>
+      <div class="col-md-4"><img src="../img/electronica.jpg" class="gallery-img w-100"></div>
+      <div class="col-md-4"><img src="../img/conmputa.jpg" class="gallery-img w-100"></div>
+      <div class="col-md-4"><img src="../img/logo.png" class="gallery-img w-100"></div>
+      <div class="col-md-4"><img src="../img/feria.jpg" class="gallery-img w-100"></div>
+    </div>
+  </section>
+
+  <footer class="text-center bg-primary text-white py-3 mt-4">
+    © 2025 Instituto Huaycán — Vasquez Ricapa Johan
+  </footer>
+</body>
+</html>
